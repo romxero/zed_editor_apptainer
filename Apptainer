@@ -11,7 +11,7 @@ export LC_ALL=C.UTF-8
 dnf install -y epel-release 
 dnf config-manager --set-enabled crb
 
-dnf install -y wget curl gcc g++ clang mold alsa-lib-devel fontconfig-devel wayland-devel libxkbcommon-x11-devel openssl-devel libzstd-devel perl-FindBin perl-IPC-Cmd perl-File-Compare perl-File-Copy vulkan-loader sqlite-devel
+dnf install --skip-broken -y wget curl gcc g++ clang mold alsa-lib-devel fontconfig-devel wayland-devel libxkbcommon-x11-devel openssl-devel libzstd-devel perl-FindBin perl-IPC-Cmd perl-File-Compare perl-File-Copy vulkan-loader sqlite-devel
 
 cd /opt
 wget https://github.com/zed-industries/zed/releases/download/v0.146.5/zed-linux-x86_64.tar.gz
