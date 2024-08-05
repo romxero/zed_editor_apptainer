@@ -9,6 +9,7 @@ From: rockylinux:9
 export LC_ALL=C.UTF-8
 #install epel and ansible core
 dnf install -y epel-release 
+dnf config-manager --set-enabled crb
 
 dnf install -y gcc g++ clang mold alsa-lib-devel fontconfig-devel wayland-devel libxkbcommon-x11-devel openssl-devel libzstd-devel perl-FindBin perl-IPC-Cmd perl-File-Compare perl-File-Copy vulkan-loader sqlite-devel
 
